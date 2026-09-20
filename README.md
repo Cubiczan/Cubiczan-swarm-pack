@@ -37,6 +37,8 @@ Cubiczan replaces inter-agent LLM chat with **stigmergy** — indirect communica
 
 ### The Math That Matters
 
+_Asserted design projections, not in-repo benchmark results — the zero-token coordination mechanism is implemented in `src/stigmergy.rs` and `src/swarm_module/src/lib.rs`, but no benchmark harness in this repository validates the figures below._
+
 | Metric | Traditional (AutoGen/CrewAI) | Cubiczan |
 |--------|------------------------------|----------|
 | 12-subtask coordination tokens | ~78 LLM calls | **0 coordination calls** |
@@ -276,7 +278,7 @@ The Next.js 16 dashboard provides real-time visibility into the entire swarm. It
 ```bash
 # 1. Clone
 git clone https://github.com/icohangar-ops/cubiczan-swarm-pack.git
-cd Cubiczan-swarm-pack
+cd cubiczan-swarm-pack
 
 # 2. Start SpaceTimeDB
 spacetimedb start --host 0.0.0.0 --port 3000
